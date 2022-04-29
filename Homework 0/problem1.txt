@@ -1,0 +1,23 @@
+Q: The open() system call can be used with two parameters or with three parameters. What deter-
+   mines whether the operating system will expect two parameters or three parameters?
+A: The third parameter, mode, is relavant only when a new file is being created 
+   as it defines the file permissions of the new file being created. 
+
+Q: When you call the read() system call, it may encounter an error. 
+   As a programmer, how can you tell the difference between when read 
+   reaches the end-of-file and when it encounters some type of error?
+A: On sucess of reading a file, a number less than the amount of requested bytes is returned. 
+   It is not an error if this number is smaller than the number of bytes requested. However,
+   if an error is encountered, the number -1 is returned. 
+
+Q: It’s possible for the fork() system call to fail because there are already too many processes. 
+   If this happens, how can the programmer tell that fork() failed for this particular reason.
+A: Yes, it is possible for fork system call to fail because off too many processes running. 
+   The system call will throw a EAGAIN error. 
+
+Q: Imagine you create several child processes with fork() then call wait(). 
+   The call to wait() will return after any one of the child processes terminates. 
+   After wait() returns, how can you tell which of the child processes terminated?
+A: You can check the value returned by wait. On success, wait returns the 
+   process ID of the terminated child and on error, it returns -1. 
+

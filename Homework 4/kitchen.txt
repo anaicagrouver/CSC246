@@ -1,0 +1,18 @@
+Global.java
+
+Total: 456
+Minimum Dishes: 20
+Maximum Dishes: 40
+
+Ordered.java
+
+Total: 883
+Minimum Dishes: 35
+Maximum Dishes: 284
+
+TakeAll.java 
+
+Total: 1020
+Minimum Dishes: 36
+Maximum Dishes: 305
+

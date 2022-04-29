@@ -1,0 +1,7 @@
+(a) fstat() is identical to stat(), except that the file about which information is to be retrieved is specified by a file descriptor (instead of a file name).
+
+(b) we can specify the O_EXCL flag along with the O_CREAT flag, which indicates that the open() call must create a unique file (not return an already existing file) and prevents open() from dereferencing symbolic links in the last component. Further, we can also add the O_NOFOLLOW flag to make sure that open() doesn't follow a symbolic link if it's the last component of the specified filename, but it can be used when the program allows opening an existing file as long as it isn't a symbolic link
+
+(c) ru_utime is the total amount of time spent executing in user mode and ru_stime is the total amount of time spent executing in kernel mode
+
+(d) mq_receive will throw a EINTR error stating that the call was interrupted by a signal handler; see signal(7)
