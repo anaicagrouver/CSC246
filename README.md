@@ -1,0 +1,2 @@
+# CSC246
+NCSU CSC 246
